@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgc"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="95dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/oval"
+            android:src="@drawable/ghost">
+
+        </ImageView>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/boxbox"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/box"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/dollar">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Koin Ku"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:paddingLeft="100dp"/>
+        <TextView
+            android:id="@+id/banyak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="000"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:paddingLeft="120dp"
+            android:paddingTop="30dp"/>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/review"
+        tools:listitem="@layout/dashboard_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/boxbox"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>
